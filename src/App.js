@@ -1,17 +1,15 @@
 
+import Header from './components/Header';
 import './App.css';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        
-        <p>
-         edit as you ppl like
-         
-        </p>
-        
-      </header>
+       <>
+        <Header/>
+        <Footer/>
+       </> 
     </div>
   );
 }
