@@ -16,8 +16,34 @@ code {
 }
 
 .navbar{
-  border: 2px solid red;
+  /* border: 2px solid red; */
+  border-bottom: 1px aqua solid;
   text-align: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  /* testing stickiness */
+  position: sticky;
+  top: 0px;
+
+}
+
+.nav-logo{
+  text-align: center;
+  width: 50%;
+}
+
+.nav-btns{
+  width: 50%;
+display: flex;
+justify-content: space-evenly;
+}
+
+.btn{
+  padding:5px ;
+  background-color:aqua;
+  font-weight: bolder;
+  border: none;
 }
 
 .footer{
