@@ -1,15 +1,16 @@
-
-import Header from './components/Header';
 import './App.css';
+import CinematicVideo from './components/CinematicVideo';
 import Footer from './components/Footer';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <div className="App">
-       <>
-        <Header/>
+       <div>
+        <Navbar/>
         <Footer/>
-       </> 
+        <CinematicVideo/>
+       </div> 
     </div>
   );
 }

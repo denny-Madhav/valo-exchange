@@ -1,4 +1,4 @@
-body {
+body,div {
   margin: 0;
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -6,7 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  position: relative;
+
   box-sizing: border-box;
 }
 
@@ -15,16 +15,58 @@ code {
     monospace;
 }
 
-.header{
-  border: 2px solid red;
+/*  *********   Navbar **************** */
+
+.navbar{
+  /* border: 2px solid red; */
+  width: 100%;
+  border-bottom: 1px aqua solid;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  /* testing stickiness */
+  position: sticky;
+  top: 0px;
+
 }
 
-.footer{
-  position: absolute;
-  bottom: 0;
-  top: 94vh;
+.nav-logo{
   text-align: center;
-  border: 2px solid red;
-  padding: 20px;
-  width: 95.6%;
+  width: 50%;
+}
+
+.nav-btns{
+  width: 50%;
+display: flex;
+justify-content: space-evenly;
+}
+
+.btn{
+  padding:5px ;
+  background-color:aqua;
+  font-weight: bolder;
+  border: none;
+}
+
+/*  ******* Cinematic Valo video ************ */
+
+.vid-loop{
+  /* margin: ; */
+  /* padding: 10px; */
+  width: 100%;
+  height: 70vh;
+  border: 5px solid rgb(252, 177, 255);
+}
+
+
+/* ************  Footer ****************** */
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
 }
